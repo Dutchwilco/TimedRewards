@@ -1,0 +1,20 @@
+# TimedRewards Messages Configuration
+
+# Command messages
+reload-success: "&aConfiguration reloaded successfully!"
+no-permission: "&cYou don't have permission to use this command!"
+invalid-usage: "&cUsage: /timedrewards [reload|list|pause|resume]"
+
+# Reward messages
+reward-received: "&aYou have received a timed reward!"
+reward-broadcast: "&e{reward_name} &ahas been given to all online players!"
+
+# Timer messages
+timer-paused: "&eAll reward timers have been paused!"
+timer-resumed: "&aAll reward timers have been resumed!"
+
+# List command
+list-header: "&6&lActive Timed Rewards:"
+list-entry: "&e{reward_name} &7- Next in: &f{time_remaining}"
+list-paused: "&7(PAUSED)"
+no-rewards: "&cNo timed rewards configured!"

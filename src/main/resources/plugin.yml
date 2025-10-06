@@ -1,0 +1,19 @@
+name: TimedRewards
+version: '${project.version}'
+main: nl.dutchcoding.timedrewards.TimedRewards
+api-version: '1.20'
+author: Dutchwilco
+softdepend: [PlaceholderAPI]
+description: A timed rewards plugin that gives items to all online players at intervals
+
+commands:
+  timedrewards:
+    description: Main command for TimedRewards
+    aliases: [tr, trewards]
+    usage: /<command> [reload|list|pause|resume]
+    permission: timedrewards.admin
+
+permissions:
+  timedrewards.admin:
+    description: Access to all TimedRewards commands
+    default: op

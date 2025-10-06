@@ -1,0 +1,15 @@
+# TimedRewards Configuration
+# Created by wilcodwg
+
+# Plugin prefix
+prefix: "&8[&6TimedRewards&8]&r"
+
+# Broadcast messages when rewards are given
+broadcast-reward: true
+
+# Play sound when rewards are given
+play-sound:
+  enabled: true
+  sound: "ENTITY_PLAYER_LEVELUP"
+  volume: 1.0
+  pitch: 1.0

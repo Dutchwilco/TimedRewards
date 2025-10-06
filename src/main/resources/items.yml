@@ -1,0 +1,99 @@
+# TimedRewards Items Configuration
+# Configure your timed rewards here
+#
+# You can use ITEMS, COMMANDS, or BOTH!
+#
+# Format:
+# reward-id:
+#   enabled: true/false
+#   name: "Display Name"
+#   interval: 60 (in minutes)
+#   
+#   # Optional: Give items
+#   items:
+#     - material: DIAMOND
+#       amount: 5
+#       name: "&bShiny Diamonds"
+#       lore:
+#         - "&7Hourly reward"
+#         - "&7Enjoy!"
+#       enchantments:
+#         - "DURABILITY:1"
+#       custom-model-data: 0
+#   
+#   # Optional: Execute commands (runs as console)
+#   commands:
+#     - "crate give %player% daily 1"
+#     - "eco give %player% 1000"
+#
+# Available placeholders in commands:
+#   %player% - Player's name
+
+# Example rewards
+hourly-diamonds:
+  enabled: true
+  name: "&6Hourly Diamonds"
+  interval: 60
+  items:
+    - material: DIAMOND
+      amount: 5
+      name: "&b&lHourly Diamonds"
+      lore:
+        - "&7A reward for being online!"
+        - "&7Next reward in 1 hour"
+
+daily-kit:
+  enabled: false
+  name: "&5Daily Starter Kit"
+  interval: 1440
+  items:
+    - material: DIAMOND_SWORD
+      amount: 1
+      name: "&c&lDaily Sword"
+      lore:
+        - "&7A powerful weapon"
+      enchantments:
+        - "SHARPNESS:3"
+        - "UNBREAKING:2"
+    - material: GOLDEN_APPLE
+      amount: 3
+      name: "&eGolden Apples"
+      lore:
+        - "&7Stay healthy!"
+    - material: EMERALD
+      amount: 10
+
+quick-test:
+  enabled: false
+  name: "&aQuick Test Reward"
+  interval: 1
+  items:
+    - material: COOKIE
+      amount: 1
+      name: "&6Test Cookie"
+      lore:
+        - "&7Testing every minute!"
+
+# Example: Crate keys reward (commands only)
+crate-keys:
+  enabled: false
+  name: "&d&lCrate Keys Reward"
+  interval: 120
+  commands:
+    - "crate give %player% vote 1"
+    - "crate give %player% daily 1"
+
+# Example: Mixed reward (items + commands)
+mixed-reward:
+  enabled: false
+  name: "&e&lMixed Reward"
+  interval: 180
+  items:
+    - material: GOLDEN_APPLE
+      amount: 3
+      name: "&6Golden Apples"
+      lore:
+        - "&7Plus bonus crate keys!"
+  commands:
+    - "crate give %player% vote 1"
+    - "eco give %player% 500"
